@@ -1,0 +1,138 @@
+
+
+#mainSection
+{
+    border:2px solid yellow;
+    box-shadow: hotpink 10px 10px 20px;
+    display: -webkit-box;
+    overflow: hidden;
+    width: 80%;
+    height: 600px;
+    margin:10px auto;
+    border-radius: 10px;
+    -webkit-transition: 3s;
+     box-shadow: blue 10px 10px 200px inset;
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+
+#mainSection:hover
+{
+    
+    -webkit-transform:skew(10deg);
+
+}
+
+#mainSection:active
+{
+    -webkit-transform:scale(0.5);
+}
+
+
+
+section
+{
+    width:30%;
+    height:600px;
+    border:2px solid black;
+/*    margin:10px auto;*/
+    overflow-x: scroll;
+    resize: both;
+    -webkit-column-count:3;
+    -webkit-column-rule:2px solid red;
+    border-radius: 10px;
+    box-shadow: red 10px 10px 200px inset;
+    margin:5px;
+   
+}
+
+
+ aside
+{
+    width: 40%;
+    height:600px;
+    margin:5px;
+    border-radius: 10px;
+    border:2px solid blue;
+    padding-right: 5px;
+    box-shadow: hotpink 10px 10px 200px inset;
+    overflow-y: scroll;
+   text-align: center;
+    -webkit-box-flex: 1;
+}
+
+img
+{
+    width:125px;
+    height: 100px;
+    margin-left: 5%;
+    border: 3px solid blue;
+    box-shadow: hotpink 10px 10px 20px;
+    display: inline;
+    padding: 3px;
+    -webkit-transition: 5s;
+    margin-top: 3%;
+}
+
+img:hover
+{
+        -webkit-transform:rotate(0deg) scale(1.5);
+        box-shadow: red 10px 10px 20px;    
+}
+
+img:active
+{
+    -webkit-transform:scale(4);
+}
+
+mark p
+{
+    background-color: red;
+}
+
+mark p:hover{
+     background:-webkit-linear-gradient(top,blue, green);
+}
+
+mark p:active
+{
+    background: -webkit-linear-gradient(top,yellow, red);
+}
+
+
+@media all and (orientation:portrait)
+            {
+                img
+                {
+                 transform: rotate(20deg);
+
+                }
+
+                img:hover
+                {
+                    box-shadow: blueviolet 5px 5px 5px;
+                    border: dashed blue;
+                }
+                img:active
+                {
+                    -webkit-transform: scale(1.2);
+                    border:blue dashed;
+                    box-shadow: crimson 2px 2px 5px;
+                }
+                #mainSection:hover
+                {
+                    -webkit-transform: skew(0deg);
+
+                }
+                #mainSection:active
+                {
+                    -webkit-transform: scale(1);
+                   
+                }
+                mark p
+                {
+                    background-color:darkorange;
+                }
+            }
